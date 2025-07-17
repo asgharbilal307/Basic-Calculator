@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    
+    <div class="Whole_container">
+        <input type="text" id="result_bar" readonly>
+        <div class="keypad">
+        <button class="digits" onclick="current='0' ;
+        document.querySelector('#result_bar').value=current;">C</button>
+        <button class="digits" onclick="current+='1' ;
+        document.querySelector('#result_bar').value=current;">1
+            
+        </button>
+        <button class="digits" onclick="
+        
+        current+='2' ;
+        document.querySelector('#result_bar').value=current;">2</button>
+        <button class="digits" onclick="current+='+' ;
+        document.querySelector('#result_bar').value=current;">+</button>
+        
+        <button class="digits"onclick="current+='3' ;
+        document.querySelector('#result_bar').value=current;">3</button>
+        <button class="digits" onclick="current+='4' ;
+        document.querySelector('#result_bar').value=current;">4</button>
+        <button class="digits" onclick="current+='-' ;
+        document.querySelector('#result_bar').value=current;">-</button>
+        <button class="digits" onclick="current+='5' ;
+        document.querySelector('#result_bar').value=current;">5</button>
+        <button class="digits" onclick="current+='6' ;
+        document.querySelector('#result_bar').value=current;">6</button>
+        <button class="digits" onclick="current+='*' ;
+        document.querySelector('#result_bar').value=current;">*</button>
+        <button class="digits" onclick="current+='7' ;
+        document.querySelector('#result_bar').value=current;">7</button>
+        <button class="digits" onclick="current+='8' ;
+        document.querySelector('#result_bar').value=current;">8</button>
+        <button class="digits"onclick="current+='/' ;
+        document.querySelector('#result_bar').value=current;">/</button>
+        
+        <button class="digits" onclick="let result=eval(current);
+        current= result;
+        document.querySelector('#result_bar').value=current;">=</button>
+        <button class="digits" onclick="current+='9' ;
+        document.querySelector('#result_bar').value=current;">9</button>
+        <button class="digits" onclick="current+='0' ;
+        document.querySelector('#result_bar').value=current;">0</button>
+        <button class="digits" onclick="current+='.' ;
+        document.querySelector('#result_bar').value=current;">.</button>
+    
+        </div>
+    </div>
+
+    <script>
+        
+        let current='';
+        document.querySelector('#result_bar').value=current;
+    </script>
+</body>
+</html>
